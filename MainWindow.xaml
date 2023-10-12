@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ToggleButton Click="ToggleButton_Click">Закрыть соединение</ToggleButton>
+        <StackPanel x:Name="stackPanel">
+            <CheckBox x:Name="checkBox1" IsThreeState="True" 
+                      IsChecked="False" Height="20" Content="Неотмеченное"/>
+            <CheckBox x:Name="checkBox2" IsThreeState="True" 
+                      IsChecked="True" Height="20" Content="Отмечено"/>
+            <CheckBox x:Name="checkBox3" IsThreeState="True" 
+                      IsChecked="{x:Null}" Height="20" Content="Неопределно"/>
+        </StackPanel>
     </Grid>
 </Window>
