@@ -26,13 +26,5 @@ namespace PR1_Proshunin
             InitializeComponent();
         }
 
-       
-
-        private void RadioButton_Checks(object sender, RoutedEventArgs e)
-        {
-            RadioButton preessed = (RadioButton)sender;
-            MessageBox.Show(preessed.Content.ToString());
-
-        }
     }
 }
