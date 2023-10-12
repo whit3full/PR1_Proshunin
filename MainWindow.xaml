@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox SelectedIndex="1">
-            <ComboBoxItem Content="Red"/>
-            <ComboBoxItem Content="Green"/>
-            <ComboBoxItem Content="Blue"/>
-        </ComboBox>
+        <ListBox SelectedIndex="1">
+            <ListBoxItem Content="Red"/>
+            <ListBoxItem Content="Green"/>
+            <ListBoxItem Content="Blue"/>
+        </ListBox>
     </Grid>
 </Window>
