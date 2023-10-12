@@ -25,14 +25,9 @@ namespace PR1_Proshunin
             InitializeComponent();
         }
 
-        private void hello_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Кнопка нажата");
         }
     }
 }
