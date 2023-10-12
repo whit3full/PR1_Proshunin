@@ -26,9 +26,13 @@ namespace PR1_Proshunin
             InitializeComponent();
         }
 
-        private void ToggleButton_Click(object sender, RoutedEventArgs e)
+       
+
+        private void RadioButton_Checks(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Состояние кнопки: " + (sender as ToggleButton).IsChecked);
+            RadioButton preessed = (RadioButton)sender;
+            MessageBox.Show(preessed.Content.ToString());
+
         }
     }
 }
