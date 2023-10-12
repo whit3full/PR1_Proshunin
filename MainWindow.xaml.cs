@@ -29,5 +29,10 @@ namespace PR1_Proshunin
         {
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
