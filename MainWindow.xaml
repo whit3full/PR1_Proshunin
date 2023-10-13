@@ -7,11 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StatusBar DockPanel.Dock="Bottom">
-            <TextBlock Text="Сохранение документа..."/>
-            <StatusBarItem HorizontalAlignment="Right">
-                <TextBlock Text="Подключение к БД: ОК"/>
-            </StatusBarItem>
-        </StatusBar>
+        <InkCanvas>
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="Red" Height="5" Width="4"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
     </Grid>
 </Window>
