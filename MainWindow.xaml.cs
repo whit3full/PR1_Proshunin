@@ -26,5 +26,34 @@ namespace PR1_Proshunin
             InitializeComponent();
         }
 
+        private void Fon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuItem menuItem = (MenuItem)sender;
+
+            if (menuItem.Header.ToString() == "Синий")
+            {
+                this.Background = Brushes.LightBlue;
+            }
+           else if (menuItem.Header.ToString() == "Зеленый")
+            {
+                this.Background = Brushes.LightGreen;
+            }
+            else if (menuItem.Header.ToString() == "Аква")
+            {
+                this.Background = Brushes.Aqua;
+            }
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Разработчик не в чем не виноват\nОн к успеху шел\nНЕ ПОЛУЧИЛОСЬ\nНЕ ФОРТАНУЛО", "Information",
+                MessageBoxButton.OK, MessageBoxImage.Information);
+     
+        }
     }
 }
