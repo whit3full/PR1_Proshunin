@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Slider Height="25" Width="100" Minimum="1" Maximum="100" Value="20"/>
+        <Menu Background="White" BorderBrush="Navy" BorderThickness="1">
+            <MenuItem Header="_Файл">
+                <MenuItem Header="_Открыть"/>
+                <MenuItem Header="_Сохранить"/>
+                <Separator/>
+                <MenuItem Header="_Закрыть"/>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
