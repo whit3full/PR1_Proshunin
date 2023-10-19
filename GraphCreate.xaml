@@ -1,0 +1,28 @@
+﻿<Window x:Class="PR1_Proshunin.GraphCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR1_Proshunin"
+        mc:Ignorable="d"
+        Title="GraphCreate" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" Height="26" Width="173">
+            <Label Content="Цвет кисти:" VerticalAlignment="Center"/>
+            <ComboBox Name="colorComboBox" Width="100" SelectionChanged="colorComboBox_SelectionChanged">
+                <ComboBoxItem Content="Черный"/>
+                <ComboBoxItem Content="Красный"/>
+                <ComboBoxItem Content="Синий"/>
+                <ComboBoxItem Content="Зеленый"/>
+            </ComboBox>
+        </StackPanel>
+        <Slider x:Name="www" Grid.Row="0" Value="2"
+                    Minimum="1" Maximum="20" ValueChanged="www_ValueChanged" Width="100" Height="20"/>
+        <InkCanvas x:Name="Brush1" Grid.Row="1">
+        </InkCanvas>
+    </Grid>
+</Window>

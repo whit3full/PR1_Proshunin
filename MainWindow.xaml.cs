@@ -28,7 +28,8 @@ namespace PR1_Proshunin
 
         private void Fon_Click(object sender, RoutedEventArgs e)
         {
-
+            GraphCreate graphCreate = new GraphCreate();
+            graphCreate.Show();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
